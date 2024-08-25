@@ -1,0 +1,11 @@
+{
+  "compilerOptions": {
+    "target": "es2015", // Define a versão do JavaScript para a qual será compilado
+    "module": "commonjs", // Define o sistema de módulos
+    "outDir": "../JavaScript", // Diretório de saída dos arquivos compilados
+    "rootDir": ".", // Diretório raiz dos arquivos TypeScript (src)
+    "strict": true // Habilita verificações estritas no TypeScript
+  },
+  "include": ["**/*.ts"], // Inclui todos os arquivos .ts dentro da pasta src
+  "exclude": ["../JavaScript"] // Exclui a pasta de saída para evitar compilar novamente
+}

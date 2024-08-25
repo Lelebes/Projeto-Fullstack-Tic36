@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gerenciador de Tarefas</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <ul id="tasks">
+      <li data-task-id="1">
+        <span class="task-text">Tarefa 1</span>
+        <button class="edit-btn">Editar</button>
+        <button class="delete-btn">Excluir</button>
+      </li>
+    </ul>
+
+    <input type="text" id="edit-input" style="display: none" />
+    <div class="container">
+      <header>
+        <h1>Gerenciador de Tarefas</h1>
+      </header>
+
+      <section class="task-input">
+        <h2>Adicionar Nova Tarefa</h2>
+        <form id="task-form">
+          <input
+            type="text"
+            id="task-input"
+            placeholder="Digite uma nova tarefa"
+            required
+          />
+          <button type="submit">Adicionar</button>
+        </form>
+      </section>
+
+      <section class="task-list">
+        <h2>Tarefas Pendentes</h2>
+        <ul id="tasks">
+          <!-- As tarefas pendentes serão adicionadas dinamicamente aqui -->
+        </ul>
+      </section>
+
+      <section class="completed-tasks">
+        <h2>Tarefas Concluídas</h2>
+        <ul id="completed-tasks">
+          <!-- Tarefas concluídas serão adicionadas dinamicamente aqui -->
+        </ul>
+      </section>
+    </div>
+
+    <!-- Conectando o arquivo JavaScript -->
+    <script src="main.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
